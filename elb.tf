@@ -1,6 +1,6 @@
 resource "aws_elb" "Medx-Node" {
   name               = "Medx-Node-elb"
-  availability_zones = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  availability_zones = ["eu-west-1a", "eu-west-1b"]
   security_groups    = [aws_security_group.medx-elb-sg.id]
 
   listener {
